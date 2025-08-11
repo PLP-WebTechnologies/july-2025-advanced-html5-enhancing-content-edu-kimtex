@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Content & Form Enhancement</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    fieldset {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Enhanced HTML5 Page</h1>
+    <p>This page demonstrates advanced HTML5 elements including lists, tables, media and a well-structured form with validation.</p>
+  </header>
+
+  <!-- Section 1: Lists -->
+  <section>
+    <h2>Top 5 Web Development Tools</h2>
+    <ol>
+      <li>Visual Studio Code</li>
+      <li>Chrome DevTools</li>
+      <li>Git & GitHub</li>
+      <li>Figma</li>
+      <li>Postman</li>
+    </ol>
+
+    <h3>Frontend Technologies</h3>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript (ES6+)</li>
+      <li>React</li>
+    </ul>
+  </section>
+
+  <!-- Section 2: Table -->
+  <section>
+    <h2>Weekly Study Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Topic</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>HTML & CSS</td>
+          <td>2 hours</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>JavaScript</td>
+          <td>3 hours</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Responsive Design</td>
+          <td>2 hours</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 3: Media -->
+  <section>
+    <h2>Featured Media</h2>
+
+    <figure>
+      <img src="E:\PLP PRACTICALS\WEB DEVPT WORK\IMG_6816.jpg" alt="Sample Image" width="400">
+      <figcaption>Sample Image</figcaption>
+    </figure>
+
+    <h3>Background Music</h3>
+    <audio controls>
+      <source src="Katalay - Ya Levis.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <h3>Introductory Video</h3>
+    <video width="400" controls>
+      <source src="sample-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+  </section>
+
+  <!-- Section 4: HTML5 Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="POST" autocomplete="on">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="e.g. John Doe" minlength="3">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="e.g. john@example.com">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="e.g. 0712345678">
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="4" maxlength="12">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6">
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">-- Select --</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..." maxlength="200"></textarea>
+
+        <label>
+          <input type="checkbox" name="newsletter" checked readonly>
+          Subscribe to newsletter (Required)
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 KimtexTech. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
